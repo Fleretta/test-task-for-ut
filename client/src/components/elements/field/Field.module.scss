@@ -1,0 +1,37 @@
+.field {
+  position: relative;
+
+  width: 100%;
+  margin-top: 1em;
+
+  input {
+    width: 100%;
+    margin: 0;
+    padding: 0.5em 0 0.5em 2em;
+
+    color: var(--light);
+    font-family: inherit;
+
+    background: transparent;
+    border: 1px solid var(--light);
+
+    border-radius: 0.25em;
+  }
+
+  ::placeholder {
+    color: var(--light);
+    letter-spacing: 0.2em;
+
+    opacity: 1;
+  }
+
+  svg {
+    position: absolute;
+    top: calc(0.5em + 1px);
+    left: 0.5em;
+
+    height: 1em;
+
+    fill: var(--light);
+  }
+}
