@@ -39,7 +39,7 @@ export const LoginForm = () => {
       />
       <div className={styles.loginSettingsContainer}>
         <div className={styles.rememberContainer}>
-          <input type="checkbox" id="rememberCheckbox" />
+          <input type="checkbox" id="rememberCheckbox"/>
           <label htmlFor="rememberCheckbox">Remember me</label>
         </div>
         <button className={styles.forgotPasswordButton}>
@@ -48,7 +48,7 @@ export const LoginForm = () => {
       </div>
       <Button text="Login" onClick={() => auth(username, password)}/>
       <div>
-        <span>Not a member?</span>
+        <span className={styles.notAMember}>Not a member?</span>
         <Link to="registration">
           <button className={styles.createAccountButton}>Create account</button>
         </Link>
